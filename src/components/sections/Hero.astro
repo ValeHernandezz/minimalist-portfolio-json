@@ -9,7 +9,7 @@ import WorldMapIcon from '@/icons/WorldMap.astro';
 import X from '@/icons/X.astro';
 
 const { name, label, image, email, phone, location, profiles } = basics;
-const { city, region, countryCode } = location;
+const { city, region, countryCode, url } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
@@ -30,8 +30,10 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(' • ');
       <h2>{label}</h2>
 
       <span>
-        <WorldMapIcon />
-        {city}, {region}, {countryCode}
+        <a href={url} target="_blank">
+          <WorldMapIcon />
+          {city}, {region}, {countryCode}
+        </a>
       </span>
 
       <footer class="print accesible-info">
@@ -122,13 +124,17 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(' • ');
     border-radius: 16px;
   }
 
-  span {
+  span a {
     color: #666;
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.375rem;
     font-size: 0.85rem;
     letter-spacing: -0.05rem;
+  }
+
+  span a:hover {
+    text-decoration: underline;
   }
 
   footer {
