@@ -5,6 +5,7 @@
       "@/*": ["src/*"],
       "@cv": ["./cv.json"],
       "@/components/": ["src/components/*"],
+      "@/icons/": ["src/icons/*"],
       "@/layouts/": ["src/layouts/*"],
       "@/pages/": ["src/pages/*"]
     }
