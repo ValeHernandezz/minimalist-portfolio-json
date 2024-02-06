@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Valentina Hernández",
-    "label": "Programadora y Estudiante de Licenciatura en Tecnologías de la Información.",
+    "label": "Programadora y Estudiante de Licenciatura en Tecnologías de la Información",
     "image": "https://avatars.githubusercontent.com/u/128721976?v=4",
     "email": "valehernandezmodino@gmail.com",
     "phone": "(912) 555-4321",
     "url": "https://valehernandez.vercel.app",
-    "summary": "A summary of John Doe…",
+    "summary": "Estudiante de Licenciatura en Tecnologías de la Información con habilidades en Java, SQL, HTML y CSS. Con conocimientos en el desarrollo de páginas web utilizando JPA, JSP, Astro, React y Tailwind CSS.",
     "location": {
       "address": "",
       "postalCode": "30000",
@@ -16,9 +16,14 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "network": "LinkedIn",
+        "username": "Valentina Hernández",
+        "url": "https://www.linkedin.com/in/valentina-hernandez-modino"
+      },
+      {
+        "network": "GitHub",
+        "username": "ValeHernandezz",
+        "url": "https://github.com/ValeHernandezz"
       }
     ]
   },
@@ -46,13 +51,23 @@
   ],
   "education": [
     {
-      "institution": "University",
+      "institution": "Universidad Tecnológica del Uruguay",
+      "url": "https://utec.edu.uy/es/educacion/carrera/licenciatura-en-tecnologias-de-la-informacion/",
+      "area": "Licenciatura en Tecnologías de la Información",
+      "studyType": "Licenciatura",
+      "startDate": "2022-08-01",
+      "endDate": null,
+      "summary": "Me estoy formando en áreas de Programación, Testing, Bases de Datos e Infraestructura. Además, estoy desarrollando habilidades en la gestión de proyectos de TI a través de proyectos integradores, donde aplico metodologías ágiles. Este proceso me capacita para liderar o formar parte de equipos de trabajo, compuestos por 3 a 5 personas, de manera efectiva y eficiente.",
+      "courses": ["DB1101 - Basic SQL"]
+    },
+    {
+      "institution": "Liceo Nº 1 Eduardo Fabini",
       "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
+      "area": "Bachillerato Físico-Matemático",
+      "studyType": "Bachillerato",
+      "startDate": "2020-03-01",
+      "endDate": "2021-12-01",
+      "summary": "Desarrollé habilidades autónomas de investigación científica y matemática, fortalecí mi expresión oral y escrita, promoví la colaboración grupal y exploré estrategias geométricas.",
       "courses": ["DB1101 - Basic SQL"]
     }
   ],
@@ -83,9 +98,46 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "name": "Java"
+    },
+    {
+      "name": "Astro"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    },
+    {
+      "name": "Tailwind CSS"
+    },
+    {
+      "name": "SQL"
+    },
+    {
+      "name": "JPA"
+    },
+    {
+      "name": "JSP"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "Testing"
+    },
+    {
+      "name": "Infraestructura"
+    },
+    {
+      "name": "Hibernate"
     }
   ],
   "languages": [
@@ -108,10 +160,30 @@
   ],
   "projects": [
     {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
+      "name": "Gestión de Constancias UTEC - Web Version",
+      "isActive": true,
+      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Gestión de Constancias UTEC - Web Version",
+      "isActive": false,
+      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Gestión de Constancias UTEC - Web Version",
+      "isActive": false,
+      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Gestión de Constancias UTEC - Web Version",
+      "isActive": false,
+      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
       "highlights": ["Won award at AIHacks 2016"],
       "url": "https://project.com/"
     }
