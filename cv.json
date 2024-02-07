@@ -8,10 +8,10 @@
     "url": "https://valehernandez.vercel.app",
     "summary": "Estudiante de Licenciatura en Tecnologías de la Información con habilidades en Java, SQL, HTML y CSS. Con conocimientos en el desarrollo de páginas web utilizando JPA, JSP, Astro, React y Tailwind CSS.",
     "location": {
-      "postalCode": "30000",
       "city": "Minas",
+      "region": "Lavalleja",
       "countryCode": "UY",
-      "region": "Lavalleja"
+      "url": "https://maps.app.goo.gl/VdcBzswDJSszdqnK6"
     },
     "profiles": [
       {
@@ -160,31 +160,31 @@
   "projects": [
     {
       "name": "Gestión de Constancias UTEC - Web Version",
+      "isActive": false,
+      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
+      "highlights": ["Java EE", "JSP", "SQL Developer", "Hibernate", "WildFly"],
+      "github": "https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023"
+    },
+    {
+      "name": "Libros de La Rueda del Tiempo",
       "isActive": true,
-      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "description": "Página web sobre la saga de libros \"La Rueda del Tiempo\", implementada con View Transitions para mejorar la experiencia de usuario.",
+      "highlights": ["Astro", "Tailwind CSS", "JavaScript", "HTML5"],
+      "url": "https://wot-books.vercel.app/",
+      "github": "https://github.com/ValeHernandezz/wot-books"
     },
     {
-      "name": "Gestión de Constancias UTEC - Web Version",
+      "name": "Gestión de Constancias UTEC - Desktop Version",
       "isActive": false,
-      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Gestión de Constancias UTEC - Web Version",
-      "isActive": false,
-      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Gestión de Constancias UTEC - Web Version",
-      "isActive": false,
-      "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "description": "Aplicación de escritorio para Windows enfocada en la Gestión de Constancias.",
+      "highlights": [
+        "Java EE",
+        "SQL Developer",
+        "Hibernate",
+        "WildFly",
+        "WindowBuilder"
+      ],
+      "github": "https://github.com/ValeHernandezz/proyecto-gestion-constancias"
     }
   ]
 }

@@ -1,34 +1,57 @@
 ---
 import Section from '@/components/Section.astro';
+import GitHubIcon from '@/icons/GitHub.astro';
 import { projects } from '@cv';
 ---
 
 <Section title="Proyectos">
   <ul>
     {
-      projects.map(({ url, description, highlights, name, isActive }) => {
-        return (
-          <li>
-            <article>
-              <header>
-                <h3>
-                  <a href={url} title={`Ver el proyecto ${name}`}>
-                    {name}
-                  </a>
-                  {isActive && <span>&bull;</span>}
-                </h3>
-                <p>{description}</p>
-              </header>
+      projects.map(
+        ({ url, description, highlights, name, isActive, github }) => {
+          return (
+            <li>
+              <article>
+                <header>
+                  <h3>
+                    {url ? (
+                      <a
+                        href={url}
+                        target="_blank"
+                        title={`Ver el proyecto ${name}`}
+                      >
+                        {name}
+                      </a>
+                    ) : (
+                      name
+                    )}
 
-              <footer>
-                {highlights.map((highlight) => {
-                  return <span>{highlight}</span>;
-                })}
-              </footer>
-            </article>
-          </li>
-        );
-      })
+                    {isActive && <span>&bull;</span>}
+
+                    {github && (
+                      <a
+                        class="github-code-link"
+                        href={github}
+                        target="_blank"
+                        title={`Ver código fuente del proyecto ${name}`}
+                      >
+                        <GitHubIcon />
+                      </a>
+                    )}
+                  </h3>
+                  <p>{description}</p>
+                </header>
+
+                <footer>
+                  {highlights.map((highlight) => {
+                    return <span>{highlight}</span>;
+                  })}
+                </footer>
+              </article>
+            </li>
+          );
+        }
+      )
     }
   </ul>
 </Section>
@@ -36,7 +59,7 @@ import { projects } from '@cv';
 <style>
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
     margin-inline: -16px;
   }
@@ -56,7 +79,9 @@ import { projects } from '@cv';
   }
 
   article h3 {
+    font-weight: 600;
     margin-bottom: 4px;
+    text-wrap: pretty;
   }
 
   article a {
@@ -91,5 +116,9 @@ import { projects } from '@cv';
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
+  }
+
+  .github-code-link {
+    margin-left: 5px;
   }
 </style>

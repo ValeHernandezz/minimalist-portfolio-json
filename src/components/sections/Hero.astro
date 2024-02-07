@@ -6,7 +6,6 @@ import MailIcon from '@/icons/Mail.astro';
 import PhoneIcon from '@/icons/Phone.astro';
 import Section from '@/components/Section.astro';
 import WorldMapIcon from '@/icons/WorldMap.astro';
-import X from '@/icons/X.astro';
 
 const { name, label, image, email, phone, location, profiles } = basics;
 const { city, region, countryCode, url } = location;
@@ -14,7 +13,6 @@ const { city, region, countryCode, url } = location;
 const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
   LinkedIn,
-  X,
 };
 
 const linkedInInfo = profiles.find(({ network }) => network === 'LinkedIn');
@@ -162,5 +160,6 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(' • ');
   footer a:hover {
     background: #eee;
     border: 1px solid #ddd;
+    color: #444;
   }
 </style>
