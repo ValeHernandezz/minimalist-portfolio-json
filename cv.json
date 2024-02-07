@@ -96,48 +96,21 @@
     }
   ],
   "skills": [
-    {
-      "name": "Java"
-    },
-    {
-      "name": "Astro"
-    },
-    {
-      "name": "React"
-    },
-    {
-      "name": "Git"
-    },
-    {
-      "name": "HTML"
-    },
-    {
-      "name": "CSS"
-    },
-    {
-      "name": "Tailwind CSS"
-    },
-    {
-      "name": "SQL"
-    },
-    {
-      "name": "JPA"
-    },
-    {
-      "name": "JSP"
-    },
-    {
-      "name": "JavaScript"
-    },
-    {
-      "name": "Testing"
-    },
-    {
-      "name": "Infraestructura"
-    },
-    {
-      "name": "Hibernate"
-    }
+    "Java",
+    "Astro",
+    "HTML",
+    "CSS",
+    "Tailwind",
+    "SQL",
+    "JSP",
+    "Git",
+    "GitLab",
+    "React",
+    "JavaScript",
+    "Testing",
+    "Infraestructura",
+    "Hibernate",
+    "GitHub"
   ],
   "languages": [
     {
@@ -160,14 +133,12 @@
   "projects": [
     {
       "name": "Gestión de Constancias UTEC - Web Version",
-      "isActive": false,
       "description": "Página web diseñada para la administración de usuarios en un entorno universitario.",
       "highlights": ["Java EE", "JSP", "SQL Developer", "Hibernate", "WildFly"],
       "github": "https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023"
     },
     {
       "name": "Libros de La Rueda del Tiempo",
-      "isActive": true,
       "description": "Página web sobre la saga de libros \"La Rueda del Tiempo\", implementada con View Transitions para mejorar la experiencia de usuario.",
       "highlights": ["Astro", "Tailwind CSS", "JavaScript", "HTML5"],
       "url": "https://wot-books.vercel.app/",
@@ -175,7 +146,6 @@
     },
     {
       "name": "Gestión de Constancias UTEC - Desktop Version",
-      "isActive": false,
       "description": "Aplicación de escritorio para Windows enfocada en la Gestión de Constancias.",
       "highlights": [
         "Java EE",
