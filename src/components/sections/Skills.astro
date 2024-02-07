@@ -1,16 +1,57 @@
 ---
 import Section from '@/components/Section.astro';
 import { skills } from '@cv';
+import {
+  AstroIcon,
+  CSS,
+  Git,
+  GitHub,
+  GitLab,
+  Hibernate,
+  HTML,
+  Infraestructura,
+  Java,
+  JavaScript,
+  JSP,
+  React,
+  SQL,
+  Tailwind,
+  Testing,
+} from '@/icons/index';
+
+const SKILLS_ICONS: Record<string, any> = {
+  AstroIcon,
+  CSS,
+  Git,
+  GitHub,
+  GitLab,
+  Hibernate,
+  HTML,
+  Infraestructura,
+  Java,
+  JavaScript,
+  JSP,
+  React,
+  SQL,
+  Tailwind,
+  Testing,
+};
 ---
 
 <Section title="Habilidades">
   <ul>
     {
-      skills.map(({ name }) => (
-        <li>
-          <span>{name}</span>
-        </li>
-      ))
+      skills.map((skill) => {
+        const iconName = skill === 'Astro' ? 'AstroIcon' : skill;
+        const Icon = SKILLS_ICONS[iconName];
+
+        return (
+          <li>
+            <Icon width="16" height="16" />
+            <span>{skill}</span>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>
@@ -28,6 +69,9 @@ import { skills } from '@cv';
     color: black;
     font-size: 0.8rem;
     font-weight: 500;
-    padding: 0.2rem 0.6rem;
+    padding: 0.2rem 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
 </style>
