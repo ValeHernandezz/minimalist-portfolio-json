@@ -1,11 +1,13 @@
 ---
-import { basics } from '@cv';
-import GitHub from '@/icons/GitHub.astro';
-import LinkedIn from '@/icons/LinkedIn.astro';
-import MailIcon from '@/icons/Mail.astro';
-import PhoneIcon from '@/icons/Phone.astro';
 import Section from '@/components/Section.astro';
-import WorldMapIcon from '@/icons/WorldMap.astro';
+import { basics } from '@cv';
+import {
+  GitHub,
+  LinkedIn,
+  Mail as MailIcon,
+  Phone as PhoneIcon,
+  WorldMap as WorldMapIcon,
+} from '@/icons/index';
 
 const { name, label, image, email, phone, location, profiles } = basics;
 const { city, region, countryCode, url } = location;
@@ -47,7 +49,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(' • ');
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MailIcon />
+              <MailIcon width="16" height="16" />
             </a>
           )
         }
@@ -59,7 +61,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(' • ');
               target="_blank"
               rel="noopener noreferrer"
             >
-              <PhoneIcon />
+              <PhoneIcon width="16" height="16" />
             </a>
           )
         }
@@ -74,7 +76,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(' • ');
                 target="_blank"
                 rel="noopener noreferred"
               >
-                <Icon />
+                <Icon height="16" weight="16" />
               </a>
             );
           })
@@ -150,9 +152,8 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(' • ');
     align-items: center;
     justify-content: center;
     border: 1px solid #eee;
-    padding: 4px;
-    height: 32px;
-    width: 32px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 6px;
     transition: all 0.3s ease;
   }
